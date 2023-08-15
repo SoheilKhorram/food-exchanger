@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --primary-clr: #efc89c;
+
+    --dark-clr-300: #0c0c0e;
+    --dark-clr-400: #1e1f22;
+}
+
+@font-face {
+    font-family: IranSans;
+    src: url('./assets/fonts/IranSans.ttf') format('trueType');
+}
+
+html {
+    font-family: IranSans;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--dark-clr-400);
+}
