@@ -14,7 +14,7 @@ interface inputProps {
 
 const Input = ({ label, type, placeholder, name, disabled, className }: inputProps) => {
     return (
-        <div className='flex flex-col items-end'>
+        <div className='flex flex-col items-end gap-3'>
             <label className='text-primary-clr'>{label}</label>
             <input className={`bg-dark-clr-400 text-primary-clr rounded-lg p-4 border border-solid focus-visible:border-primary-clr ${className}`} type={type} placeholder={placeholder} name={name} disabled={disabled} />
         </div>
