@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         "primary-clr": "var(--primary-clr)",
+        "primary-clr-100": "var(--primary-clr-100)",
 
         "dark-clr-300": "var(--dark-clr-300)",
         "dark-clr-400": "var(--dark-clr-400)"

@@ -4,6 +4,7 @@
 
 :root {
     --primary-clr: #efc89c;
+    --primary-clr-100: #cfb089;
 
     --dark-clr-300: #0c0c0e;
     --dark-clr-400: #1e1f22;
@@ -20,5 +21,5 @@ html {
 }
 
 body {
-    background-color: var(--dark-clr-400);
+    background-color: var(--dark-clr-300);
 }
