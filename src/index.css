@@ -10,6 +10,14 @@
     --dark-clr-400: #1e1f22;
 }
 
+button,
+input {
+    font-family: inherit;
+    border: none;
+    outline: none;
+    font-weight: inherit;
+}
+
 @font-face {
     font-family: IranSans;
     src: url('./assets/fonts/IranSans.ttf') format('trueType');
