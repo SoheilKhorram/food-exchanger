@@ -3,11 +3,17 @@
 @tailwind utilities;
 
 :root {
-    --primary-clr: #efc89c;
-    --primary-clr-100: #cfb089;
+    --gold-clr-300: #efc89c;
 
-    --dark-clr-300: #0c0c0e;
-    --dark-clr-400: #1e1f22;
+    --primary-clr: var(--gold-clr-300);
+
+    --txt-clr-light: white;
+    --txt-clr-dark: black;
+
+    --dark-clr-300: #1e1f22;
+    --dark-clr-400: #0c0c0e;
+
+    --background-clr: var(--dark-clr-400);
 }
 
 button,
@@ -16,38 +22,6 @@ input {
     border: none;
     outline: none;
     font-weight: inherit;
-}
-
-input[type="checkbox"] {
-    -webkit-appearance: none;
-    appearance: none;
-    margin: 0;
-    display: grid;
-    place-content: center;
-
-    font: inherit;
-    color: currentColor;
-}
-
-
-input[type="checkbox"]::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-}
-
-input[type="checkbox"]:checked::before {
-    transform: scale(1);
-}
-
-input[type="checkbox"]::before {
-    /* ...existing styles */
-
-    transform-origin: bottom left;
-    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
 }
 
 @font-face {
@@ -61,6 +35,6 @@ html {
 }
 
 body {
-    background-color: var(--dark-clr-300);
+    background-color: var(--background-clr);
     min-height: 100vh;
 }

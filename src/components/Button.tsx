@@ -7,7 +7,7 @@ interface buttonProps {
 
 const Button = ({ className, children }: buttonProps) => {
     return (
-        <button className={`rounded-lg py-3 px-4 font-semibold ${className}`}>
+        <button className={`rounded-lg py-3 px-4 font-semibold text-txt-clr-dark ${className}`}>
             {children}
         </button>
     )

@@ -6,11 +6,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "gold-clr-300": "var(--gold-clr-300)",
+
         "primary-clr": "var(--primary-clr)",
-        "primary-clr-100": "var(--primary-clr-100)",
+
+        "txt-clr-light": "var(--txt-clr-light)",
+        "txt-clr-dark": "var(--txt-clr-dark)",
 
         "dark-clr-300": "var(--dark-clr-300)",
-        "dark-clr-400": "var(--dark-clr-400)"
+        "dark-clr-400": "var(--dark-clr-400)",
+
+        "background-clr": "var(--background-clr)"
       },
       fontFamily: {
         IranSans: "IranSans"
