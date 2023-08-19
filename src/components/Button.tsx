@@ -8,7 +8,7 @@ interface buttonProps {
 
 const Button = ({ className, children, onClick }: buttonProps) => {
     return (
-        <button onClick={onClick} className={`rounded-lg py-3 px-4 font-semibold text-txt-clr-dark ${className}`}>
+        <button onClick={onClick} className={`flex items-center justify-center rounded-lg py-3 px-4 font-semibold text-txt-clr-dark ${className}`}>
             {children}
         </button>
     )
