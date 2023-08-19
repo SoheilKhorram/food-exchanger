@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Button from '../components/Button'
 import Input from '../components/Input'
 import FoodList from '../components/FoodList'
-import Tick from '../assets/svgs/Tick.svg'
+import tick from '../assets/svgs/tick.svg'
 
 const HomePage = () => {
     const [selectedButtonId, setSelectedButtonId] = useState(-1)
@@ -23,21 +23,21 @@ const HomePage = () => {
                     onClick={() => { handleButtonClick(1) }}
                     className={`col-span-2 bg-primary-clr`}
                 >
-                    {selectedButtonId !== 1 ? null : <img src={Tick} alt="Tick Icon" className="inline-block w-6 h-6 mr-2" />}
+                    {selectedButtonId !== 1 ? null : <img src={tick} alt="tick Icon" className="inline-block w-6 h-6 mr-2" />}
                     غذا بدم و غذا بگیرم
                 </Button>
                 <Button
                     onClick={() => { handleButtonClick(2) }}
                     className={`bg-primary-clr`}
                 >
-                    {selectedButtonId !== 2 ? null : <img src={Tick} alt="Tick Icon" className="inline-block w-6 h-6 mr-2" />}
+                    {selectedButtonId !== 2 ? null : <img src={tick} alt="tick Icon" className="inline-block w-6 h-6 mr-2" />}
                     فقط غذا بدم
                 </Button>
                 <Button
                     onClick={() => { handleButtonClick(3) }}
                     className={`bg-primary-clr`}
                 >
-                    {selectedButtonId !== 3 ? null : <img src={Tick} alt="Tick Icon" className="inline-block w-6 h-6 mr-2" />}
+                    {selectedButtonId !== 3 ? null : <img src={tick} alt="tick Icon" className="inline-block w-6 h-6 mr-2" />}
                     فقط غذا بگیرم
                 </Button>
             </div>
